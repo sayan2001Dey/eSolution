@@ -365,21 +365,24 @@
 
 /*** Single Page Hero Header Start ***/
 .bg-breadcrumb {
-	position: relative;
-	padding: 145px 0 50px 0;
-    background: linear-gradient(rgba(242, 139, 0, 0.2), rgba(242, 139, 0, 0.3)), url(../img/breadcrumb.jpg);
-    background-position: center top;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/h3.jfif);
+    background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    
+    background-size: cover;
+    padding: 100px 0 100px 0;
+    transition: 0.5s;
 }
 
-@media (max-width: 992px) {
-    .bg-breadcrumb {
-        padding-top: 50px;
-    }
-
+.bg-breadcrumb .breadcrumb {
+    position: relative;
 }
+
+.bg-breadcrumb .breadcrumb .breadcrumb-item a {
+    color: var(--bs-white);
+}
+
 /*** Single Page Hero Header End ***/
 
 
