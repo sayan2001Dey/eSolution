@@ -1,3 +1,28 @@
+.bg-primary {
+    background: #dd3333 !important;
+    color: #ffffff !important;
+}
+
+.bg-secondary {
+    background: #dd3333 !important;
+    color: #ffffff !important;
+}
+
+.text-primary {
+    color: #dd3333 !important;
+}
+
+.text-secondary {
+    color: #dd3333 !important;
+}
+
+.btn-primary {
+    background: #dd3333 !important;
+    border-color: yellow !important;
+    color: #ffffff !important;
+}
+
+
 /*** Spinner Start ***/
 /*** Spinner ***/
 #spinner {
