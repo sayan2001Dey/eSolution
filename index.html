@@ -46,13 +46,13 @@
             <div class="row gx-0 align-items-center" style="height: 45px;">
                 <div class="col-lg-8 text-center text-lg-start mb-lg-0">
                     <div class="d-flex flex-wrap">
-                        <a href="#" style="color: white; text-decoration: none; margin-right: 15px;">
-                            <i class="fas fa-map-marker-alt" style="color: white; margin-right: 5px;"></i>Kolkata, West Bengal 700091
+                        <a href="#" style="color: white; text-decoration: none; margin-right: 20px;">
+                            <i class="fas fa-map-marker-alt" style="color: white; margin-right: 5px;"></i>Antariksh Tech Park, WEBEL MORE, Sector V, saltlake, Kolkata, West Bengal 700091
                         </a>
-                        <a href="#" style="color: white; text-decoration: none; margin-right: 15px;">
+                        <a href="#" style="color: white; text-decoration: none; padding-left: 20px;">
                             <i class="fas fa-phone-alt" style="color: white; margin-right: 5px;"></i>+91 92327 97948
                         </a>
-                        <a href="#" style="color: white; text-decoration: none;">
+                        <a href="#" style="color: white; text-decoration: none; padding-left: 35px;">
                             <i class="fas fa-envelope" style="color: white; margin-right: 5px;"></i>info@esolutioninfo.com
                         </a>
                     </div>
@@ -120,7 +120,7 @@
                 <img src="img/c1.jpg" class="img-fluid w-100" alt="Image">
                 <div class="carousel-caption">
                     <div class="carousel-caption-content p-3" style="max-width: 900px;">
-                        <h4 class="text-secondary text-uppercase sub-title fw-bold mb-4 wow fadeInUp" data-wow-delay="0.1s" style="letter-spacing: 3px;">We Plan</h4>
+                        <h4 id="planText" class="text-secondary text-uppercase sub-title fw-bold mb-4 wow fadeInUp" data-wow-delay="0.1s" style="letter-spacing: 3px;">WE</h4>
                         <h1 class="display-1 text-capitalize text-white mb-4 wow fadeInUp" data-wow-delay="0.3s">Transform Your Workspace Experience</h1>
                         <p class="fs-5 wow fadeInUp" data-wow-delay="0.5s">Ready-to-move-in offices within 45-60 days from the date of contractual agreement. Featuring aesthetically pleasing designs tailored to client requirements and preferences.</p>
                     </div>
@@ -130,7 +130,7 @@
                 <img src="img/c2.jpg" class="img-fluid w-100" alt="Image">
                 <div class="carousel-caption">
                     <div class="carousel-caption-content p-3" style="max-width: 900px;">
-                        <h4 class="text-secondary text-uppercase sub-title fw-bold mb-4" style="letter-spacing: 3px;">We Discuss</h4>
+                        <h4 id="disText" class="text-secondary text-uppercase sub-title fw-bold mb-4" style="letter-spacing: 3px;">WE DISCUSS</h4>
                         <h1 class="display-1 text-capitalize text-white mb-4">Real-Time Design Solutions</h1>
                         <p class="fs-5">We leverage real-time technology to curate cutting-edge designs that align perfectly with your vision.</p>
                     </div>
@@ -140,13 +140,42 @@
                 <img src="img/c3.jpg" class="img-fluid w-100" alt="Image">
                 <div class="carousel-caption">
                     <div class="carousel-caption-content p-3" style="max-width: 900px;">
-                        <h4 class="text-secondary text-uppercase sub-title fw-bold mb-4" style="letter-spacing: 3px;">We Understand</h4>
+                        <h4 id="unText" class="text-secondary text-uppercase sub-title fw-bold mb-4" style="letter-spacing: 3px;">We Understand</h4>
                         <h1 class="display-1 text-capitalize text-white mb-4">Smartworks Campus Ecosystem</h1>
                         <p class="fs-5">Design and Build with confidence. Procure with ease. Let technology make your office-making journey easy.</p>
                     </div>
                 </div>
             </div>
         </div>
+        
+        <script>
+            // Function to animate the text letter by letter
+            function animateText(elementId, text, delay) {
+                let index = 0;
+                let element = document.getElementById(elementId);
+                
+                // Start by appending the static "WE" text
+                element.textContent = "WE"; // Initial static "WE"
+        
+                function displayLetter() {
+                    if (index < text.length) {
+                        element.textContent += text[index]; // Add the next letter
+                        index++; // Move to the next letter
+                        setTimeout(displayLetter, delay); // Adjust delay (ms) to control speed
+                    }
+                }
+        
+                displayLetter(); // Start animation for the text
+            }
+        
+            // Start animation once the page has loaded
+            window.onload = function() {
+                animateText("planText", " Plan", 500); // Animate "Plan"
+                animateText("disText", " Discuss", 1000); // Animate "Discuss"
+                animateText("unText", " Understand", 1800); // Animate "Understand"
+            };
+        </script>
+        
         <!-- Carousel End -->
 
         <!-- Banner Start -->
@@ -1253,7 +1282,7 @@
                         <h4 class="text-white mb-4">Address</h4>
                         <div class="d-flex align-items-center mb-3">
                             <div class="btn btn-lg-square btn-primary rounded-circle"><i class="fas fa-map-marker-alt"></i></div>
-                            <p class="text-white mb-0 ms-3">Kolkata, West Bengal 700091</p>
+                            <p class="text-white mb-0 ms-3">Antariksh Tech Park, Sector V, Kolkata, West Bengal 700091</p>
                         </div>
                         <div class="d-flex align-items-center mb-3">
                             <div class="btn btn-lg-square btn-primary rounded-circle"><i class="fa fa-phone-alt"></i></div>
